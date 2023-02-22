@@ -4,8 +4,8 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 import time
 
-USERNAME = "Enter you're twitter username"
-PASSWORD = "Enter you're twitter password"
+USERNAME = "Enter your twitter username"
+PASSWORD = "Enter your twitter password"
 
 class CheckBot:
 	def __init__(self):
