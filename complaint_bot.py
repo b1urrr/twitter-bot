@@ -6,12 +6,13 @@ import time
 
 USERNAME = "Enter your twitter username"
 PASSWORD = "Enter your twitter password"
+CHROME_WEBDRIVER_LOCATION = "C:/Data/chromedriver.exe" # insert the path to where yours is
 
 class CheckBot:
 	def __init__(self):
 		self.chrome_options = Options()
 		self.chrome_options.add_experimental_option("detach", True)
-		self.chrome_web_driver = "C:/Data/chromedriver.exe"
+		self.chrome_web_driver = CHROME_WEBDRIVER_LOCATION
 		self.driver = webdriver.Chrome(executable_path=self.chrome_web_driver, chrome_options=self.chrome_options)
 		self.down = 0
 		self.up = 0
